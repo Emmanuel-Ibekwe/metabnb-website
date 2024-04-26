@@ -122,3 +122,17 @@ html {
     opacity: 0.4;
   }
 }
+
+.scrollbar::-webkit-scrollbar {
+  height: 1px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  width: 1px !important;
+  height: 1px !important;
+}
