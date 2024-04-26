@@ -1,11 +1,15 @@
 import nft1 from "../../assets/nft1.png";
 import star from "../../assets/star.png";
+import heart from "../../assets/heart.png";
 
-export default function NftCard() {
+export default function NftCard({ img }) {
   return (
-    <div className="flex flex-col max-w-[292px] flex-initial p-4 border border-[#d7d7d7] rounded-xl">
-      <div className="max-w-[260px] max-h-[265px]">
-        <img src={nft1} alt="" className="object-cover w-full" />
+    <div className="flex flex-col max-w-[292px] flex-initial p-4 border border-[#d7d7d7] rounded-xl hover:scale-110 transition duration-200">
+      <div className="max-w-[260px] max-h-[265px] relative ">
+        <img src={img} alt="" className="object-cover w-full" />
+        <span className="absolute right-2 top-2">
+          <img src={heart} alt="" />
+        </span>
       </div>
       <div className="w-full text-xs space-y-2 mt-2">
         <div className="flex w-full justify-between ">
