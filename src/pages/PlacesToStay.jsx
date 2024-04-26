@@ -1,6 +1,4 @@
-import NavBar from "./../components/Navigation/NavBar";
 import NftSection from "./../components/NftSection/NftSection";
-import Footer from "../components/Footer/Footer";
 import PlacesToStayNavigation from "../components/PlacesToStayNavigation/PlacesToStayNavigation";
 import nft1 from "../assets/nft1.png";
 import nft2 from "../assets/nft2.png";

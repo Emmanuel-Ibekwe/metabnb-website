@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import metabnbLogo from "../../assets/metabnb-logo.png";
 
 export default function MobileNavMenu({
   showMobileMenu,

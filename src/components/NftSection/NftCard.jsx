@@ -1,4 +1,3 @@
-import nft1 from "../../assets/nft1.png";
 import star from "../../assets/star.png";
 import heart from "../../assets/heart.png";
 
