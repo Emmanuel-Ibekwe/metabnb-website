@@ -9,16 +9,20 @@ export default function NavBar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-const handleConnectWallet = () => {
-  setShowMobileMenu(false);
-  setShowModal(true);
-}
+  const handleConnectWallet = () => {
+    setShowMobileMenu(false);
+    setShowModal(true);
+  };
 
   return (
     <>
       {showModal && <Modal onClick={() => setShowModal(false)} />}
       {/* Desktop Menu */}
-      <ul className={`${showModal ? "z-20": 'z-50'} bg-white hidden lg:flex items-center justify-between px-[5%] py-5 md:space-x-8 fixed top-0 left-0 shadow-md w-full`}>
+      <ul
+        className={`${
+          showModal ? "z-20" : "z-50"
+        } bg-white hidden lg:flex items-center justify-between px-[5%] py-5 md:space-x-8 fixed top-0 left-0 shadow-md w-full`}
+      >
         <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
           <NavLink to="">
             <img src={metabnbLogo} alt="" />
@@ -52,7 +56,10 @@ const handleConnectWallet = () => {
         onClick={() => setShowMobileMenu(prev => !prev)}
       />
 
-      <MobileNavMenu showMobileMenu={showMobileMenu} onShowModal={handleConnectWallet}/>
+      <MobileNavMenu
+        showMobileMenu={showMobileMenu}
+        onShowModal={handleConnectWallet}
+      />
     </>
   );
 }
