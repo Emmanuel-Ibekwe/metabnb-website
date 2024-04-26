@@ -14,7 +14,9 @@ export default function MobileNavMenu({
           }  z-40 fixed top-0 left-0 bottom-0 flex-col  w-full justify-center  items-center space-y-8 bg-white `}
         >
           <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
-            <NavLink to="">Home</NavLink>
+            <NavLink to="" onClick={() => setShowMobileMenu(false)}>
+              Home
+            </NavLink>
           </li>
           <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
             <NavLink
