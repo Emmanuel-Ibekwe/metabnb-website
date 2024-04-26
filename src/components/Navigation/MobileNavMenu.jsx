@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import metabnbLogo from "../../assets/metabnb-logo.png";
 
-export default function MobileNavMenu({ showMobileMenu, onShowModal }) {
+export default function MobileNavMenu({
+  showMobileMenu,
+  onShowModal,
+  setShowMobileMenu
+}) {
   return (
     <>
       <nav>
@@ -14,7 +18,12 @@ export default function MobileNavMenu({ showMobileMenu, onShowModal }) {
             <NavLink to="">Home</NavLink>
           </li>
           <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
-            <NavLink to="">Place to stay</NavLink>
+            <NavLink
+              to="places-to-stay"
+              onClick={() => setShowMobileMenu(false)}
+            >
+              Place to stay
+            </NavLink>
           </li>
           <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
             <NavLink to="">NFTs</NavLink>
@@ -26,7 +35,8 @@ export default function MobileNavMenu({ showMobileMenu, onShowModal }) {
           <li>
             <button
               className="btn-nav hover:bg-[#d7d7d7] hover:cursor-pointer"
-              type="button" onClick={onShowModal}
+              type="button"
+              onClick={onShowModal}
             >
               Connect wallet
             </button>
