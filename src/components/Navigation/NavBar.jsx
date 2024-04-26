@@ -32,7 +32,7 @@ export default function NavBar() {
           <NavLink to="">Home</NavLink>
         </li>
         <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
-          <NavLink to="">Place to stay</NavLink>
+          <NavLink to="places-to-stay">Place to stay</NavLink>
         </li>
         <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
           <NavLink to="">NFTs</NavLink>
@@ -59,6 +59,7 @@ export default function NavBar() {
       <MobileNavMenu
         showMobileMenu={showMobileMenu}
         onShowModal={handleConnectWallet}
+        setShowMobileMenu={setShowMobileMenu}
       />
     </>
   );
