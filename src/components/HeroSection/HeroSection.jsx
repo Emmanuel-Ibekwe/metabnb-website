@@ -23,7 +23,7 @@ export default function HeroSection() {
           />
           <button
             type="button"
-            className="flex-initial bg-color_primary text-white h-14 w-56 rounded-r-md -translate-x-1 px-3"
+            className="flex-initial bg-color_primary text-white h-14 w-56 rounded-r-md -translate-x-1 px-1"
           >
             Search
           </button>
