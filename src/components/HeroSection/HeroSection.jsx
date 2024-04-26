@@ -15,7 +15,7 @@ export default function HeroSection() {
           metaverse, get a chance to turn your imagination into reality at your
           comfort zone
         </p>
-        <div className=" flex pb-12 lg:pb-0 xl:pb-0">
+        <div className=" flex pb-12 lg:pb-0 xl:pb-0 pr-4 lg:pr-0">
           <input
             type="text"
             placeholder="Search for location"
