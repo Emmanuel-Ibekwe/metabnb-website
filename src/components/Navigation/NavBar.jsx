@@ -29,10 +29,24 @@ export default function NavBar() {
           </NavLink>
         </li>
         <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
-          <NavLink to="">Home</NavLink>
+          <NavLink
+            to=""
+            className={({ isActive }) =>
+              isActive ? "text-[#d7d7d7]" : undefined
+            }
+          >
+            Home
+          </NavLink>
         </li>
         <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
-          <NavLink to="places-to-stay">Place to stay</NavLink>
+          <NavLink
+            to="places-to-stay"
+            className={({ isActive }) =>
+              isActive ? "text-[#d7d7d7]" : undefined
+            }
+          >
+            Place to stay
+          </NavLink>
         </li>
         <li className="hover:text-[#d7d7d7] hover:cursor-pointer">
           <NavLink to="">NFTs</NavLink>
