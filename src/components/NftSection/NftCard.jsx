@@ -4,7 +4,7 @@ import heart from "../../assets/heart.png";
 export default function NftCard({ img }) {
   return (
     <div className="flex flex-col max-w-[292px] flex-initial p-4 border border-[#d7d7d7] rounded-xl hover:scale-110 transition duration-200">
-      <div className="max-w-[260px] max-h-[265px] relative ">
+      <div className="w-[260px] h-[265px] relative ">
         <img src={img} alt="" className="object-cover w-full" />
         <span className="absolute right-2 top-2">
           <img src={heart} alt="" />
